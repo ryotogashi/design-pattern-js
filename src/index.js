@@ -3,6 +3,7 @@ import SuperCar from "./creation/constructor";
 import Vehicle from "./creation/singleton";
 import SmartphoneFactory from "./creation/factory";
 import PhoneFactory from "./creation/abstract-factory";
+import carMixins from "./structural/mixins";
 
 const honda = new Car(4, "V4", "blue");
 console.log(honda);
@@ -26,3 +27,6 @@ const pixel2 = pFactory.createPhone("google");
 const iphone2 = pFactory.createPhone("apple");
 console.log(pixel2);
 console.log(iphone2);
+
+Object.assign(Car.prototype, carMixins);
+honda.revEngine();
