@@ -1,6 +1,6 @@
-import Car from "./Car";
-import SuperCar from "./SuperCar";
-import Vehicle from "./Vehicle";
+import Car from "./class-prototype";
+import SuperCar from "./constructor";
+import Vehicle from "./singleton";
 
 const honda = new Car(4, "V4", "blue");
 console.log(honda);

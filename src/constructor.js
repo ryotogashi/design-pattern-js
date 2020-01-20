@@ -1,4 +1,4 @@
-import Car from "./Car";
+import Car from "./class-prototype";
 
 // constractor pattern
 class SuperCar extends Car {
